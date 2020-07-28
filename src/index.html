@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Competency 130C - Javascript Objects</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <div class="clPanels">
+            <div class="clLeftPanel">
+                <h1>Bank of Dave</h1>
+                <div id="idNewAcct" class="clDivSection">
+                    <span>Open New Account: </span>
+                    <input placeholder="Account Name" type="text" id="idAcctName">
+                    <br>
+                    <span>Initial Deposit Amount: </span>
+                    <input placeholder="Initial Deposit" type="number" id="idInitDeposit">
+                    <br>
+                    <button type="button" id="idAddAcctBtn" class="button">Add Account</button>
+                    <br>
+                </div>
+                <br>
+                <div id="idUpdateAcct" class="clDivSection">
+                    <strong>Banking Transactions</strong>
+                    <br>
+                    Select Account to Update:
+                    <select id="idDropDown" name="dropdown">
+                        <option selected="">Select</option>
+                    </select>
+                    <br> Transaction Amount:
+                    <input placeholder="Amount" type="number" id="idAmount">
+                    <br>
+                    <button type="button" id="idDepositBtn" class="button">Deposit</button>
+                    <button type="button" id="idWithdrawBtn" class="button">Withdraw</button>
+                    <br>
+                </div>
+                <br>
+                <h1>Account Status</h1>
+                <div id="idAcctStatus" class="clDivSection">
+                    <!-- <button type="button" id="idTotalBtn" class="button">Total Account Balance</button> -->
+                    <!-- <br><br> -->
+                    <strong>Message Area</strong>
+                    <br>
+                    <p id="idAccountStatusMsg">? ? ? </p>
+                    <!-- <br> -->
+                    <button type="button" id="idLowestBtn" class="button">Lowest Account Balance</button>
+                    <button type="button" id="idHighestBtn" class="button">Highest Account Balance</button>
+                </div>
+            </div>
+            <div class="clRightPanel">
+                <h1>Account Details</h1>
+                <div class="clAcctCards" id="idAcctCards">Thank you for using Bank Of Dave
+                    <!-- <strong class="clCardTitle" id="cardTitle">Account Name</strong>
+                    <br><br>
+                    <strong> Current Balance: </strong>
+                    <br>
+                    <p id="idAccountStatusMsg">? ? ? </pspan>
+                    <br>
+                    <button type="button" id="idRemoveAcctButton" class="button">Remove Account</button> -->
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="./scripts/index.js"></script>
+</html>
